@@ -1,4 +1,5 @@
-﻿using System;
+﻿using JuanManuelBenitez_InventoryManagementSystem.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -75,6 +76,30 @@ namespace JuanManuelBenitez_InventoryManagementSystem
         private void exitBTN_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void addPartBTN_Click(object sender, EventArgs e)
+        {
+            AddPart addPartForm = new AddPart();
+            addPartForm.ShowDialog();
+        }
+
+        private void modifyPartBTN_Click(object sender, EventArgs e)
+        {
+            ModifyPart modifyPart = new ModifyPart();
+            modifyPart.ShowDialog();    
+        }
+
+        private void addProductBTN_Click(object sender, EventArgs e)
+        {
+            AddProduct addProduct = new AddProduct();
+            addProduct.ShowDialog();
+        }
+
+        private void modifyProductBTN_Click(object sender, EventArgs e)
+        {
+            ModifyProducts modifyProducts = new ModifyProducts();
+            modifyProducts.ShowDialog();    
         }
     }
 }

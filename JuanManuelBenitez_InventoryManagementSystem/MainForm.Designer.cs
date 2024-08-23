@@ -82,6 +82,7 @@
             this.addPartBTN.TabIndex = 17;
             this.addPartBTN.Text = "Add";
             this.addPartBTN.UseVisualStyleBackColor = false;
+            this.addPartBTN.Click += new System.EventHandler(this.addPartBTN_Click);
             // 
             // label1
             // 
@@ -137,6 +138,7 @@
             this.modifyPartBTN.TabIndex = 21;
             this.modifyPartBTN.Text = "Modify";
             this.modifyPartBTN.UseVisualStyleBackColor = false;
+            this.modifyPartBTN.Click += new System.EventHandler(this.modifyPartBTN_Click);
             // 
             // deletePartBTN
             // 
@@ -182,6 +184,7 @@
             this.addProductBTN.TabIndex = 24;
             this.addProductBTN.Text = "Add";
             this.addProductBTN.UseVisualStyleBackColor = false;
+            this.addProductBTN.Click += new System.EventHandler(this.addProductBTN_Click);
             // 
             // modifyProductBTN
             // 
@@ -197,6 +200,7 @@
             this.modifyProductBTN.TabIndex = 25;
             this.modifyProductBTN.Text = "Modify";
             this.modifyProductBTN.UseVisualStyleBackColor = false;
+            this.modifyProductBTN.Click += new System.EventHandler(this.modifyProductBTN_Click);
             // 
             // deleteProductBTN
             // 
@@ -255,7 +259,7 @@
             this.partDGV.BorderStyle = System.Windows.Forms.BorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -267,7 +271,7 @@
             this.partDGV.Name = "partDGV";
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
