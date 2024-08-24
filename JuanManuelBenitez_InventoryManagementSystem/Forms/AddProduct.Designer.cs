@@ -286,9 +286,9 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.label1.Location = new System.Drawing.Point(541, 76);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(137, 21);
+            this.label1.Size = new System.Drawing.Size(66, 21);
             this.label1.TabIndex = 57;
-            this.label1.Text = "All candidate Parts";
+            this.label1.Text = "All Parts";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label2

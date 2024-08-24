@@ -1,4 +1,5 @@
 ﻿using JuanManuelBenitez_InventoryManagementSystem.Forms;
+using JuanManuelBenitez_InventoryManagementSystem.Models;
 using System;
 
 using System.Windows.Forms;
@@ -10,12 +11,60 @@ namespace JuanManuelBenitez_InventoryManagementSystem
         public mainForm()
         {
             InitializeComponent();
+            
+            Inhouse dummyPart1 = new Inhouse()
+            {
+                PartID = 1,
+                Name = "Lever",
+                Price = 10.00M,
+                InStock = 10,
+                Min = 1,
+                Max = 50,
+                MachineID = 1234
+            };
+            Inhouse dummyPart2 = new Inhouse()
+            {
+                PartID = 2,
+                Name = "Screw",
+                Price = 0.50M,
+                InStock = 100,
+                Min = 1,
+                Max = 500,
+                MachineID = 5678
+            };
+
+            Outsourced dummyPart3 = new Outsourced()
+            {
+                PartID = 3,
+                Name = "Nut",
+                Price = 0.25M,
+                InStock = 200,
+                Min = 1,
+                Max = 1000,
+                CompanyName = "Nut Company"
+            };
+
+            Outsourced dummyPart4 = new Outsourced()
+            {
+                PartID = 4,
+                Name = "Bolt",
+                Price = 0.75M,
+                InStock = 150,
+                Min = 1,
+                Max = 750,
+                CompanyName = "Bolt Company"
+            };
+
+            Inventory.AddPart(dummyPart1);
+            Inventory.AddPart(dummyPart2);
+            Inventory.AddPart(dummyPart3);
+            Inventory.AddPart(dummyPart4);
+
         }
 
         private void mainForm_Load(object sender, EventArgs e)
         {
-           
-
+      
             partDGV.DataSource = Models.Inventory.AllParts;
             productDGV.DataSource = Models.Inventory.Products;
 
@@ -80,7 +129,16 @@ namespace JuanManuelBenitez_InventoryManagementSystem
 
         private void addPartBTN_Click(object sender, EventArgs e)
         {
-            AddPart addPartForm = new AddPart();
+            // Generate a new unique identifier
+            Random random = new Random();
+
+            int newPartId = random.Next(1, 9999);
+            if (Inventory.LookupPart(newPartId) != null)
+            {
+                newPartId = random.Next(1, 9999);
+            }
+
+            AddPart addPartForm = new AddPart(newPartId);
             addPartForm.ShowDialog();
         }
 
@@ -122,12 +180,22 @@ namespace JuanManuelBenitez_InventoryManagementSystem
 
         private void deletePartBTN_Click(object sender, EventArgs e)
         {
-            if(partDGV.SelectedRows.Count > 0)
+            if (partDGV.SelectedRows.Count > 0)
             {
+                // Get the selected row
                 DataGridViewRow selectedRow = partDGV.SelectedRows[0];
+
+                // Get the data from the selected row (assuming the first column contains the unique identifier)
                 int partId = Convert.ToInt32(selectedRow.Cells[0].Value);
 
-                Models.Inventory.DeletePart(Models.Inventory.LookupPart(partId));
+                // Ask the user for confirmation before deleting
+                DialogResult result = MessageBox.Show("Are you sure you want to delete this part?", "Confirmation", MessageBoxButtons.YesNo);
+
+                if (result == DialogResult.Yes)
+                {
+                    // Delete the part
+                    Inventory.DeletePart(Models.Inventory.LookupPart(partId));
+                }
             }
             else
             {
@@ -137,12 +205,17 @@ namespace JuanManuelBenitez_InventoryManagementSystem
 
         private void deleteProductBTN_Click(object sender, EventArgs e)
         {
+
             if(productDGV.SelectedRows.Count > 0)
             {
                 DataGridViewRow selectedRow = productDGV.SelectedRows[0];
                 int productId = Convert.ToInt32(selectedRow.Cells[0].Value);
 
-                Models.Inventory.DeleteProduct(Models.Inventory.LookupProduct(productId));
+                DialogResult result = MessageBox.Show("Are you sure you want to delete this product?", "Confirmation", MessageBoxButtons.YesNo);
+                if (result == DialogResult.Yes)
+                {
+                    Inventory.DeleteProduct(Inventory.LookupProduct(productId));
+                }
             }
             else
             {

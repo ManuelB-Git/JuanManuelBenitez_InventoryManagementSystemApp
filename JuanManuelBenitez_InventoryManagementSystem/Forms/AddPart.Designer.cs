@@ -67,6 +67,7 @@
             // 
             this.idTXT.BackColor = System.Drawing.Color.White;
             this.idTXT.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.idTXT.Enabled = false;
             this.idTXT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.idTXT.Location = new System.Drawing.Point(185, 164);
             this.idTXT.Name = "idTXT";

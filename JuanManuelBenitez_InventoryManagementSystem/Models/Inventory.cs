@@ -1,14 +1,19 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace JuanManuelBenitez_InventoryManagementSystem.Models
 {
     internal static class Inventory
     {
+
+        
+
         //The Data
         ////////////////////////////////////////////////
         //Part
@@ -18,7 +23,6 @@ namespace JuanManuelBenitez_InventoryManagementSystem.Models
         //Product
         // BindingList of all products in the inventory
         public static BindingList<Product> Products = new BindingList<Product>();
-
 
         //The Add
         ////////////////////////////////////////////////
@@ -35,7 +39,6 @@ namespace JuanManuelBenitez_InventoryManagementSystem.Models
         {
             Products.Add(product);
         }
-
 
         //The Lookup
         ////////////////////////////////////////////////
@@ -66,7 +69,6 @@ namespace JuanManuelBenitez_InventoryManagementSystem.Models
             }
             return null;
         }
-
 
         //The Update
         ////////////////////////////////////////////////
@@ -100,7 +102,6 @@ namespace JuanManuelBenitez_InventoryManagementSystem.Models
             }
         }
 
-
         //The Delete
         ////////////////////////////////////////////////
         //Part
@@ -116,5 +117,7 @@ namespace JuanManuelBenitez_InventoryManagementSystem.Models
         {
             return Products.Remove(product);
         }
+
+        
     }
 }

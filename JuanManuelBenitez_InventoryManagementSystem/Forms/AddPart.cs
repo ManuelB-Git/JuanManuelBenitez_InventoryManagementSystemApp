@@ -1,21 +1,17 @@
 ﻿using JuanManuelBenitez_InventoryManagementSystem.Models;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 using System.Windows.Forms;
 
 namespace JuanManuelBenitez_InventoryManagementSystem.Forms
 {
     public partial class AddPart : Form
     {
-        public AddPart()
+        private int newId;
+        public AddPart(int newId)
         {
             InitializeComponent();
+            this.newId = newId;
         }
 
         private void partsLBL_Click(object sender, EventArgs e)
@@ -43,7 +39,7 @@ namespace JuanManuelBenitez_InventoryManagementSystem.Forms
 
         private void AddPartForm_Load(object sender, EventArgs e)
         {
-
+            idTXT.Text = newId.ToString();
         }
 
         private void savePartBTN_Click(object sender, EventArgs e)

@@ -315,7 +315,6 @@
             dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.productDGV.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
-            this.productDGV.RowHeadersVisible = false;
             dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.productDGV.RowsDefaultCellStyle = dataGridViewCellStyle6;
             this.productDGV.ShowEditingIcon = false;
