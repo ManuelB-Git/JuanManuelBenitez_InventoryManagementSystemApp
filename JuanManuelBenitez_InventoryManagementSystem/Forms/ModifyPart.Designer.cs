@@ -268,6 +268,7 @@
             this.savePartBTN.TabIndex = 51;
             this.savePartBTN.Text = "Save";
             this.savePartBTN.UseVisualStyleBackColor = false;
+            this.savePartBTN.Click += new System.EventHandler(this.savePartBTN_Click);
             // 
             // textBox1
             // 
@@ -322,6 +323,7 @@
             this.Name = "ModifyPart";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "ModifyPart";
+            this.Load += new System.EventHandler(this.ModifyPart_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

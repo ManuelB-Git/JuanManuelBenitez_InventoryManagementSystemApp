@@ -12,6 +12,7 @@ namespace JuanManuelBenitez_InventoryManagementSystem.Models
         // List of associated parts for the product
         BindingList<Part> AssociatedParts = new BindingList<Part>();
 
+
         // Product properties
         public int ProductID { get; set; }
         public string Name { get; set; }

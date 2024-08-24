@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,12 +12,12 @@ namespace JuanManuelBenitez_InventoryManagementSystem.Models
         //The Data
         ////////////////////////////////////////////////
         //Part
-        // List of all parts in the inventory
-        public static List<Part> AllParts = new List<Part>();
+        // BindingList of all parts in the inventory
+        public static BindingList<Part> AllParts = new BindingList<Part>();
 
         //Product
-        // List of all products in the inventory
-        public static List<Product> Products = new List<Product>();
+        // BindingList of all products in the inventory
+        public static BindingList<Product> Products = new BindingList<Product>();
 
 
         //The Add
@@ -73,12 +74,14 @@ namespace JuanManuelBenitez_InventoryManagementSystem.Models
         // Method to update a part in the inventory
         public static void UpdatePart(int partID, Part part)
         {
-            for (int i = 0; i < AllParts.Count; i++)
+            Part existingPart = LookupPart(partID);
+            if (existingPart != null)
             {
-                if (AllParts[i].PartID == partID)
-                {
-                    AllParts[i] = part;
-                }
+                existingPart.Name = part.Name;
+                existingPart.Price = part.Price;
+                existingPart.InStock = part.InStock;
+                existingPart.Min = part.Min;
+                existingPart.Max = part.Max;
             }
         }
 
@@ -86,12 +89,14 @@ namespace JuanManuelBenitez_InventoryManagementSystem.Models
         // Method to update a product in the inventory
         public static void UpdateProduct(int productID, Product product)
         {
-            for (int i = 0; i < Products.Count; i++)
+            Product existingProduct = LookupProduct(productID);
+            if (existingProduct != null)
             {
-                if (Products[i].ProductID == productID)
-                {
-                    Products[i] = product;
-                }
+                existingProduct.Name = product.Name;
+                existingProduct.Price = product.Price;
+                existingProduct.InStock = product.InStock;
+                existingProduct.Min = product.Min;
+                existingProduct.Max = product.Max;
             }
         }
 

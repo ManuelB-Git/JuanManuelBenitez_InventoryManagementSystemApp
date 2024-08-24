@@ -29,19 +29,19 @@
         private void InitializeComponent()
         {
             this.idLBL = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.idTXT = new System.Windows.Forms.TextBox();
             this.savePartBTN = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.nameTXT = new System.Windows.Forms.TextBox();
             this.nameLBL = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.inventoryTXT = new System.Windows.Forms.TextBox();
             this.inventoryLBL = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.priceTXT = new System.Windows.Forms.TextBox();
             this.priceLBL = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.maxTXT = new System.Windows.Forms.TextBox();
             this.maxLBL = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.minTXT = new System.Windows.Forms.TextBox();
             this.minLBL = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.categoryTXT = new System.Windows.Forms.TextBox();
             this.catagoryLBL = new System.Windows.Forms.Label();
             this.cancelPartBTN = new System.Windows.Forms.Button();
             this.titleLBL = new System.Windows.Forms.Label();
@@ -63,15 +63,15 @@
             this.idLBL.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.idLBL.Click += new System.EventHandler(this.partsLBL_Click);
             // 
-            // textBox1
+            // idTXT
             // 
-            this.textBox1.BackColor = System.Drawing.Color.White;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.textBox1.Location = new System.Drawing.Point(185, 164);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(250, 25);
-            this.textBox1.TabIndex = 29;
+            this.idTXT.BackColor = System.Drawing.Color.White;
+            this.idTXT.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.idTXT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.idTXT.Location = new System.Drawing.Point(185, 164);
+            this.idTXT.Name = "idTXT";
+            this.idTXT.Size = new System.Drawing.Size(250, 25);
+            this.idTXT.TabIndex = 29;
             // 
             // savePartBTN
             // 
@@ -87,16 +87,17 @@
             this.savePartBTN.TabIndex = 30;
             this.savePartBTN.Text = "Save";
             this.savePartBTN.UseVisualStyleBackColor = false;
+            this.savePartBTN.Click += new System.EventHandler(this.savePartBTN_Click);
             // 
-            // textBox2
+            // nameTXT
             // 
-            this.textBox2.BackColor = System.Drawing.Color.White;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.textBox2.Location = new System.Drawing.Point(185, 230);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(250, 25);
-            this.textBox2.TabIndex = 32;
+            this.nameTXT.BackColor = System.Drawing.Color.White;
+            this.nameTXT.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.nameTXT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.nameTXT.Location = new System.Drawing.Point(185, 230);
+            this.nameTXT.Name = "nameTXT";
+            this.nameTXT.Size = new System.Drawing.Size(250, 25);
+            this.nameTXT.TabIndex = 32;
             // 
             // nameLBL
             // 
@@ -111,15 +112,15 @@
             this.nameLBL.Text = "Name";
             this.nameLBL.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // textBox3
+            // inventoryTXT
             // 
-            this.textBox3.BackColor = System.Drawing.Color.White;
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.textBox3.Location = new System.Drawing.Point(185, 289);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(250, 25);
-            this.textBox3.TabIndex = 34;
+            this.inventoryTXT.BackColor = System.Drawing.Color.White;
+            this.inventoryTXT.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.inventoryTXT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.inventoryTXT.Location = new System.Drawing.Point(185, 289);
+            this.inventoryTXT.Name = "inventoryTXT";
+            this.inventoryTXT.Size = new System.Drawing.Size(250, 25);
+            this.inventoryTXT.TabIndex = 34;
             // 
             // inventoryLBL
             // 
@@ -134,15 +135,15 @@
             this.inventoryLBL.Text = "Inventory";
             this.inventoryLBL.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // textBox4
+            // priceTXT
             // 
-            this.textBox4.BackColor = System.Drawing.Color.White;
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.textBox4.Location = new System.Drawing.Point(185, 346);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(250, 25);
-            this.textBox4.TabIndex = 36;
+            this.priceTXT.BackColor = System.Drawing.Color.White;
+            this.priceTXT.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.priceTXT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.priceTXT.Location = new System.Drawing.Point(185, 346);
+            this.priceTXT.Name = "priceTXT";
+            this.priceTXT.Size = new System.Drawing.Size(250, 25);
+            this.priceTXT.TabIndex = 36;
             // 
             // priceLBL
             // 
@@ -157,15 +158,15 @@
             this.priceLBL.Text = "Price / Cost";
             this.priceLBL.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // textBox5
+            // maxTXT
             // 
-            this.textBox5.BackColor = System.Drawing.Color.White;
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.textBox5.Location = new System.Drawing.Point(185, 404);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(125, 25);
-            this.textBox5.TabIndex = 38;
+            this.maxTXT.BackColor = System.Drawing.Color.White;
+            this.maxTXT.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.maxTXT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.maxTXT.Location = new System.Drawing.Point(185, 404);
+            this.maxTXT.Name = "maxTXT";
+            this.maxTXT.Size = new System.Drawing.Size(125, 25);
+            this.maxTXT.TabIndex = 38;
             // 
             // maxLBL
             // 
@@ -180,15 +181,15 @@
             this.maxLBL.Text = "Max";
             this.maxLBL.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // textBox6
+            // minTXT
             // 
-            this.textBox6.BackColor = System.Drawing.Color.White;
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.textBox6.Location = new System.Drawing.Point(375, 404);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(125, 25);
-            this.textBox6.TabIndex = 40;
+            this.minTXT.BackColor = System.Drawing.Color.White;
+            this.minTXT.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.minTXT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.minTXT.Location = new System.Drawing.Point(375, 404);
+            this.minTXT.Name = "minTXT";
+            this.minTXT.Size = new System.Drawing.Size(125, 25);
+            this.minTXT.TabIndex = 40;
             // 
             // minLBL
             // 
@@ -203,15 +204,15 @@
             this.minLBL.Text = "Min";
             this.minLBL.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // textBox7
+            // categoryTXT
             // 
-            this.textBox7.BackColor = System.Drawing.Color.White;
-            this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.textBox7.Location = new System.Drawing.Point(185, 468);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(250, 25);
-            this.textBox7.TabIndex = 42;
+            this.categoryTXT.BackColor = System.Drawing.Color.White;
+            this.categoryTXT.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.categoryTXT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.categoryTXT.Location = new System.Drawing.Point(185, 468);
+            this.categoryTXT.Name = "categoryTXT";
+            this.categoryTXT.Size = new System.Drawing.Size(250, 25);
+            this.categoryTXT.TabIndex = 42;
             // 
             // catagoryLBL
             // 
@@ -285,7 +286,7 @@
             this.outsourcedRBTN.Text = "Outsourced";
             this.outsourcedRBTN.UseVisualStyleBackColor = false;
             // 
-            // AddPartForm
+            // AddPart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -295,28 +296,28 @@
             this.Controls.Add(this.inhouseRBTN);
             this.Controls.Add(this.titleLBL);
             this.Controls.Add(this.cancelPartBTN);
-            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.categoryTXT);
             this.Controls.Add(this.catagoryLBL);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.minTXT);
             this.Controls.Add(this.minLBL);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.maxTXT);
             this.Controls.Add(this.maxLBL);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.priceTXT);
             this.Controls.Add(this.priceLBL);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.inventoryTXT);
             this.Controls.Add(this.inventoryLBL);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.nameTXT);
             this.Controls.Add(this.nameLBL);
             this.Controls.Add(this.savePartBTN);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.idTXT);
             this.Controls.Add(this.idLBL);
             this.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximumSize = new System.Drawing.Size(648, 738);
             this.MinimumSize = new System.Drawing.Size(648, 738);
-            this.Name = "AddPartForm";
+            this.Name = "AddPart";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Add Part";
             this.Load += new System.EventHandler(this.AddPartForm_Load);
@@ -328,19 +329,19 @@
         #endregion
 
         private System.Windows.Forms.Label idLBL;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox idTXT;
         private System.Windows.Forms.Button savePartBTN;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox nameTXT;
         private System.Windows.Forms.Label nameLBL;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox inventoryTXT;
         private System.Windows.Forms.Label inventoryLBL;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox priceTXT;
         private System.Windows.Forms.Label priceLBL;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox maxTXT;
         private System.Windows.Forms.Label maxLBL;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox minTXT;
         private System.Windows.Forms.Label minLBL;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox categoryTXT;
         private System.Windows.Forms.Label catagoryLBL;
         private System.Windows.Forms.Button cancelPartBTN;
         private System.Windows.Forms.Label titleLBL;
