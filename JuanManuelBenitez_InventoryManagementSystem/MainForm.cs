@@ -60,15 +60,42 @@ namespace JuanManuelBenitez_InventoryManagementSystem
             Inventory.AddPart(dummyPart3);
             Inventory.AddPart(dummyPart4);
 
+            Product dummyProduct1 = new Product()
+            {
+                ProductID = 1,
+                Name = "Bike",
+                Price = 100.00M,
+                InStock = 5,
+                Min = 1,
+                Max = 10
+            };
+            Inventory.AddProduct(dummyProduct1);
+
+            dummyProduct1.AddAssociatedPart(dummyPart1);
+            dummyProduct1.AddAssociatedPart(dummyPart2);
+            dummyProduct1.AddAssociatedPart(dummyPart3);
+
+            Product dummyProduct2 = new Product()
+            {
+                ProductID = 2,
+                Name = "Car",
+                Price = 1000.00M,
+                InStock = 2,
+                Min = 1,
+                Max = 5
+            };
+
+            Inventory.AddProduct(dummyProduct2);
+            dummyProduct2.AddAssociatedPart(dummyPart3);
         }
 
         private void mainForm_Load(object sender, EventArgs e)
         {
       
-            partDGV.DataSource = Models.Inventory.AllParts;
-            productDGV.DataSource = Models.Inventory.Products;
+            partDGV.DataSource = Inventory.AllParts;
+            productDGV.DataSource = Inventory.Products;
 
-        
+            
 
         }
 
@@ -131,12 +158,12 @@ namespace JuanManuelBenitez_InventoryManagementSystem
         {
             // Generate a new unique identifier
             Random random = new Random();
+            int newPartId;
 
-            int newPartId = random.Next(1, 9999);
-            if (Inventory.LookupPart(newPartId) != null)
+            do
             {
                 newPartId = random.Next(1, 9999);
-            }
+            } while (Inventory.LookupPart(newPartId) != null);
 
             AddPart addPartForm = new AddPart(newPartId);
             addPartForm.ShowDialog();
@@ -168,14 +195,40 @@ namespace JuanManuelBenitez_InventoryManagementSystem
 
         private void addProductBTN_Click(object sender, EventArgs e)
         {
-            AddProduct addProduct = new AddProduct();
+            Random random = new Random();
+            int newProductId;
+
+            do
+            {
+                newProductId = random.Next(1, 9999);
+            } while (Inventory.LookupPart(newProductId) != null);
+
+            AddProduct addProduct = new AddProduct(newProductId);
             addProduct.ShowDialog();
         }
 
         private void modifyProductBTN_Click(object sender, EventArgs e)
         {
-            ModifyProducts modifyProducts = new ModifyProducts();
-            modifyProducts.ShowDialog();    
+            // Check if a row is selected in the productDGV DataGridView
+            if (productDGV.SelectedRows.Count > 0)
+            {
+                // Get the selected row
+                DataGridViewRow selectedRow = productDGV.SelectedRows[0];
+
+                // Get the data from the selected row (assuming the first column contains the unique identifier)
+                int productId = Convert.ToInt32(selectedRow.Cells[0].Value);
+
+                // Open the ModifyProduct form with the selected productId
+                ModifyProducts modifyProduct = new ModifyProducts(productId);
+                modifyProduct.ShowDialog();
+            }
+            else
+            {
+                // Display an error message or perform any other action when no row is selected
+                MessageBox.Show("Please select a row before modifying a product.");
+            }
+
+            this.Refresh();
         }
 
         private void deletePartBTN_Click(object sender, EventArgs e)
@@ -281,6 +334,11 @@ namespace JuanManuelBenitez_InventoryManagementSystem
             {
                 MessageBox.Show("Please enter a valid integer to search for a product.");
             }
+        }
+
+        private void productDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

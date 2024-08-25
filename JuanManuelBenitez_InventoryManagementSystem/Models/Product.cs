@@ -6,7 +6,7 @@ namespace JuanManuelBenitez_InventoryManagementSystem.Models
     internal class Product
     {
         // List of associated parts for the product
-        BindingList<Part> AssociatedParts = new BindingList<Part>();
+        public BindingList<Part> AssociatedParts = new BindingList<Part>();
 
 
         // Product properties

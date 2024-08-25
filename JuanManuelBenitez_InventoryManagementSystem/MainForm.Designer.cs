@@ -261,6 +261,7 @@
             // 
             // partDGV
             // 
+            this.partDGV.AllowUserToAddRows = false;
             this.partDGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.partDGV.BackgroundColor = System.Drawing.Color.White;
             this.partDGV.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -292,6 +293,7 @@
             // 
             // productDGV
             // 
+            this.productDGV.AllowUserToAddRows = false;
             this.productDGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.productDGV.BackgroundColor = System.Drawing.Color.White;
             this.productDGV.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -320,6 +322,7 @@
             this.productDGV.ShowEditingIcon = false;
             this.productDGV.Size = new System.Drawing.Size(500, 250);
             this.productDGV.TabIndex = 31;
+            this.productDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.productDGV_CellContentClick);
             // 
             // mainForm
             // 
