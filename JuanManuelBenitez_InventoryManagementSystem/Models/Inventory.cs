@@ -1,11 +1,6 @@
-﻿using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
+﻿
 using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.IO;
+
 
 namespace JuanManuelBenitez_InventoryManagementSystem.Models
 {
@@ -84,6 +79,7 @@ namespace JuanManuelBenitez_InventoryManagementSystem.Models
                 existingPart.InStock = part.InStock;
                 existingPart.Min = part.Min;
                 existingPart.Max = part.Max;
+
             }
         }
 
