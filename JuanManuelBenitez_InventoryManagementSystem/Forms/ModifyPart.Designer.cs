@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ModifyPart));
             this.outsourcedRBTN = new System.Windows.Forms.RadioButton();
             this.inhouseRBTN = new System.Windows.Forms.RadioButton();
             this.titleLBL = new System.Windows.Forms.Label();
@@ -319,6 +320,7 @@
             this.Controls.Add(this.savePartBTN);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.idLBL);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(648, 738);
             this.MinimumSize = new System.Drawing.Size(648, 738);
             this.Name = "ModifyPart";
