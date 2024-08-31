@@ -129,7 +129,29 @@ namespace JuanManuelBenitez_InventoryManagementSystem.Forms
 
                 foreach (DataGridViewRow row in productDGV1.SelectedRows)
                 {
-                    productDGV2.Rows.Add(row.Cells[0].Value, row.Cells[1].Value, row.Cells[2].Value, row.Cells[3].Value, row.Cells[4].Value, row.Cells[5].Value);
+                    int partID = Convert.ToInt32(row.Cells[0].Value);
+                    Part part = Inventory.LookupPart(partID);
+
+                    // Check if the part is already added
+                    bool isPartAdded = false;
+                    foreach (DataGridViewRow addedRow in productDGV2.Rows)
+                    {
+                        int addedPartID = Convert.ToInt32(addedRow.Cells[0].Value);
+                        if (addedPartID == partID)
+                        {
+                            isPartAdded = true;
+                            break;
+                        }
+                    }
+
+                    if (isPartAdded)
+                    {
+                        MessageBox.Show("Part already added.");
+                    }
+                    else
+                    {
+                        productDGV2.Rows.Add(row.Cells[0].Value, row.Cells[1].Value, row.Cells[2].Value, row.Cells[3].Value, row.Cells[4].Value, row.Cells[5].Value);
+                    }
                 }
                 this.Refresh();
             }
