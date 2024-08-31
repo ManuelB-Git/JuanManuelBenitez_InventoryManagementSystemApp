@@ -1,5 +1,6 @@
 ﻿using JuanManuelBenitez_InventoryManagementSystem.Forms;
 using JuanManuelBenitez_InventoryManagementSystem.Models;
+using JuanManuelBenitez_InventoryManagementSystem.Utilities;
 using System;
 
 using System.Windows.Forms;
@@ -92,12 +93,16 @@ namespace JuanManuelBenitez_InventoryManagementSystem
         private void mainForm_Load(object sender, EventArgs e)
         {
       
+
             partDGV.DataSource = Inventory.AllParts;
             productDGV.DataSource = Inventory.Products;
+           
+            SetPlaceHolder.SetPlaceHolderText(textBox1, "Search by Part ID");
+            SetPlaceHolder.SetPlaceHolderText(textBox2, "Search by Product ID");
 
             
 
-        }
+        }   
 
         private void button4_Click(object sender, EventArgs e)
         {
@@ -258,16 +263,24 @@ namespace JuanManuelBenitez_InventoryManagementSystem
 
         private void deleteProductBTN_Click(object sender, EventArgs e)
         {
-
-            if(productDGV.SelectedRows.Count > 0)
+            if (productDGV.SelectedRows.Count > 0)
             {
                 DataGridViewRow selectedRow = productDGV.SelectedRows[0];
                 int productId = Convert.ToInt32(selectedRow.Cells[0].Value);
 
-                DialogResult result = MessageBox.Show("Are you sure you want to delete this product?", "Confirmation", MessageBoxButtons.YesNo);
-                if (result == DialogResult.Yes)
+                Product selectedProduct = Inventory.LookupProduct(productId);
+
+                if (selectedProduct.AssociatedParts.Count > 0)
                 {
-                    Inventory.DeleteProduct(Inventory.LookupProduct(productId));
+                    MessageBox.Show("Cannot delete a product with associated parts. Remove associated parts before deleting.");
+                }
+                else
+                {
+                    DialogResult result = MessageBox.Show("Are you sure you want to delete this product?", "Confirmation", MessageBoxButtons.YesNo);
+                    if (result == DialogResult.Yes)
+                    {
+                        Inventory.DeleteProduct(selectedProduct);
+                    }
                 }
             }
             else

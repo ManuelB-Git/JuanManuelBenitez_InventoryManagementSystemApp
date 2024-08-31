@@ -71,31 +71,16 @@ namespace JuanManuelBenitez_InventoryManagementSystem.Models
         // Method to update a part in the inventory
         public static void UpdatePart(int partID, Part part)
         {
-            Part existingPart = LookupPart(partID);
-            if (existingPart != null)
-            {
-                existingPart.Name = part.Name;
-                existingPart.Price = part.Price;
-                existingPart.InStock = part.InStock;
-                existingPart.Min = part.Min;
-                existingPart.Max = part.Max;
-
-            }
+            DeletePart(LookupPart(partID));
+            AddPart(part);
         }
 
         //Product
         // Method to update a product in the inventory
         public static void UpdateProduct(int productID, Product product)
         {
-            Product existingProduct = LookupProduct(productID);
-            if (existingProduct != null)
-            {
-                existingProduct.Name = product.Name;
-                existingProduct.Price = product.Price;
-                existingProduct.InStock = product.InStock;
-                existingProduct.Min = product.Min;
-                existingProduct.Max = product.Max;
-            }
+            DeleteProduct(LookupProduct(productID));
+            AddProduct(product);
         }
 
         //The Delete
