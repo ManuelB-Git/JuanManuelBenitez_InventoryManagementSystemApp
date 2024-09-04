@@ -52,6 +52,7 @@
             // 
             // outsourcedRBTN
             // 
+            this.outsourcedRBTN.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.outsourcedRBTN.AutoSize = true;
             this.outsourcedRBTN.BackColor = System.Drawing.Color.Transparent;
             this.outsourcedRBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -66,6 +67,7 @@
             // 
             // inhouseRBTN
             // 
+            this.inhouseRBTN.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.inhouseRBTN.AutoSize = true;
             this.inhouseRBTN.BackColor = System.Drawing.Color.Transparent;
             this.inhouseRBTN.Checked = true;
@@ -83,6 +85,7 @@
             // 
             // titleLBL
             // 
+            this.titleLBL.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.titleLBL.AutoSize = true;
             this.titleLBL.BackColor = System.Drawing.Color.Transparent;
             this.titleLBL.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -96,13 +99,14 @@
             // 
             // cancelPartBTN
             // 
+            this.cancelPartBTN.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cancelPartBTN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(212)))));
             this.cancelPartBTN.FlatAppearance.BorderSize = 0;
             this.cancelPartBTN.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(69)))), ((int)(((byte)(120)))));
             this.cancelPartBTN.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(90)))), ((int)(((byte)(158)))));
             this.cancelPartBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cancelPartBTN.ForeColor = System.Drawing.Color.White;
-            this.cancelPartBTN.Location = new System.Drawing.Point(545, 664);
+            this.cancelPartBTN.Location = new System.Drawing.Point(545, 502);
             this.cancelPartBTN.Name = "cancelPartBTN";
             this.cancelPartBTN.Size = new System.Drawing.Size(75, 23);
             this.cancelPartBTN.TabIndex = 64;
@@ -112,6 +116,7 @@
             // 
             // textBox7
             // 
+            this.textBox7.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.textBox7.BackColor = System.Drawing.Color.White;
             this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox7.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -123,6 +128,7 @@
             // 
             // catagoryLBL
             // 
+            this.catagoryLBL.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.catagoryLBL.AutoSize = true;
             this.catagoryLBL.BackColor = System.Drawing.Color.Transparent;
             this.catagoryLBL.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -137,6 +143,7 @@
             // 
             // textBox6
             // 
+            this.textBox6.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.textBox6.BackColor = System.Drawing.Color.White;
             this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox6.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -148,6 +155,7 @@
             // 
             // minLBL
             // 
+            this.minLBL.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.minLBL.AutoSize = true;
             this.minLBL.BackColor = System.Drawing.Color.Transparent;
             this.minLBL.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -161,6 +169,7 @@
             // 
             // textBox5
             // 
+            this.textBox5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.textBox5.BackColor = System.Drawing.Color.White;
             this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox5.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -172,6 +181,7 @@
             // 
             // maxLBL
             // 
+            this.maxLBL.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.maxLBL.AutoSize = true;
             this.maxLBL.BackColor = System.Drawing.Color.Transparent;
             this.maxLBL.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -185,6 +195,7 @@
             // 
             // textBox4
             // 
+            this.textBox4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.textBox4.BackColor = System.Drawing.Color.White;
             this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -196,6 +207,7 @@
             // 
             // priceLBL
             // 
+            this.priceLBL.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.priceLBL.AutoSize = true;
             this.priceLBL.BackColor = System.Drawing.Color.Transparent;
             this.priceLBL.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -209,6 +221,7 @@
             // 
             // textBox3
             // 
+            this.textBox3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.textBox3.BackColor = System.Drawing.Color.White;
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -220,6 +233,7 @@
             // 
             // inventoryLBL
             // 
+            this.inventoryLBL.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.inventoryLBL.AutoSize = true;
             this.inventoryLBL.BackColor = System.Drawing.Color.Transparent;
             this.inventoryLBL.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -233,6 +247,7 @@
             // 
             // textBox2
             // 
+            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.textBox2.BackColor = System.Drawing.Color.White;
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -244,6 +259,7 @@
             // 
             // nameLBL
             // 
+            this.nameLBL.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.nameLBL.AutoSize = true;
             this.nameLBL.BackColor = System.Drawing.Color.Transparent;
             this.nameLBL.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -257,13 +273,14 @@
             // 
             // savePartBTN
             // 
+            this.savePartBTN.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.savePartBTN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(212)))));
             this.savePartBTN.FlatAppearance.BorderSize = 0;
             this.savePartBTN.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(69)))), ((int)(((byte)(120)))));
             this.savePartBTN.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(90)))), ((int)(((byte)(158)))));
             this.savePartBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.savePartBTN.ForeColor = System.Drawing.Color.White;
-            this.savePartBTN.Location = new System.Drawing.Point(464, 664);
+            this.savePartBTN.Location = new System.Drawing.Point(464, 502);
             this.savePartBTN.Name = "savePartBTN";
             this.savePartBTN.Size = new System.Drawing.Size(75, 23);
             this.savePartBTN.TabIndex = 51;
@@ -273,6 +290,7 @@
             // 
             // textBox1
             // 
+            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.textBox1.BackColor = System.Drawing.Color.White;
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox1.Enabled = false;
@@ -285,6 +303,7 @@
             // 
             // idLBL
             // 
+            this.idLBL.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.idLBL.AutoSize = true;
             this.idLBL.BackColor = System.Drawing.Color.Transparent;
             this.idLBL.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -321,8 +340,7 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.idLBL);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximumSize = new System.Drawing.Size(648, 738);
-            this.MinimumSize = new System.Drawing.Size(648, 738);
+            this.MinimumSize = new System.Drawing.Size(648, 600);
             this.Name = "ModifyPart";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "ModifyPart";

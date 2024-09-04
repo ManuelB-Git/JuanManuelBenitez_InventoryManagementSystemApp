@@ -57,6 +57,7 @@
             // 
             // searchPartBTB
             // 
+            this.searchPartBTB.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.searchPartBTB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(212)))));
             this.searchPartBTB.FlatAppearance.BorderSize = 0;
             this.searchPartBTB.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(69)))), ((int)(((byte)(120)))));
@@ -73,6 +74,7 @@
             // 
             // addPartBTN
             // 
+            this.addPartBTN.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.addPartBTN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(212)))));
             this.addPartBTN.FlatAppearance.BorderSize = 0;
             this.addPartBTN.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(69)))), ((int)(((byte)(120)))));
@@ -89,6 +91,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -102,6 +105,7 @@
             // 
             // partsLBL
             // 
+            this.partsLBL.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.partsLBL.AutoSize = true;
             this.partsLBL.BackColor = System.Drawing.Color.Transparent;
             this.partsLBL.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -116,6 +120,7 @@
             // 
             // productsLBL
             // 
+            this.productsLBL.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.productsLBL.AutoSize = true;
             this.productsLBL.BackColor = System.Drawing.Color.Transparent;
             this.productsLBL.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -129,6 +134,7 @@
             // 
             // modifyPartBTN
             // 
+            this.modifyPartBTN.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.modifyPartBTN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(212)))));
             this.modifyPartBTN.FlatAppearance.BorderSize = 0;
             this.modifyPartBTN.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(69)))), ((int)(((byte)(120)))));
@@ -145,6 +151,7 @@
             // 
             // deletePartBTN
             // 
+            this.deletePartBTN.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.deletePartBTN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(212)))));
             this.deletePartBTN.FlatAppearance.BorderSize = 0;
             this.deletePartBTN.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(69)))), ((int)(((byte)(120)))));
@@ -161,6 +168,7 @@
             // 
             // searchProductBTN
             // 
+            this.searchProductBTN.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.searchProductBTN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(212)))));
             this.searchProductBTN.FlatAppearance.BorderSize = 0;
             this.searchProductBTN.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(69)))), ((int)(((byte)(120)))));
@@ -177,6 +185,7 @@
             // 
             // addProductBTN
             // 
+            this.addProductBTN.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.addProductBTN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(212)))));
             this.addProductBTN.FlatAppearance.BorderSize = 0;
             this.addProductBTN.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(69)))), ((int)(((byte)(120)))));
@@ -193,6 +202,7 @@
             // 
             // modifyProductBTN
             // 
+            this.modifyProductBTN.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.modifyProductBTN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(212)))));
             this.modifyProductBTN.FlatAppearance.BorderSize = 0;
             this.modifyProductBTN.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(69)))), ((int)(((byte)(120)))));
@@ -209,6 +219,7 @@
             // 
             // deleteProductBTN
             // 
+            this.deleteProductBTN.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.deleteProductBTN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(212)))));
             this.deleteProductBTN.FlatAppearance.BorderSize = 0;
             this.deleteProductBTN.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(69)))), ((int)(((byte)(120)))));
@@ -225,13 +236,14 @@
             // 
             // exitBTN
             // 
+            this.exitBTN.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.exitBTN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(212)))));
             this.exitBTN.FlatAppearance.BorderSize = 0;
             this.exitBTN.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(69)))), ((int)(((byte)(120)))));
             this.exitBTN.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(90)))), ((int)(((byte)(158)))));
             this.exitBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.exitBTN.ForeColor = System.Drawing.Color.White;
-            this.exitBTN.Location = new System.Drawing.Point(1008, 789);
+            this.exitBTN.Location = new System.Drawing.Point(987, 554);
             this.exitBTN.Name = "exitBTN";
             this.exitBTN.Size = new System.Drawing.Size(75, 23);
             this.exitBTN.TabIndex = 27;
@@ -241,6 +253,7 @@
             // 
             // textBox1
             // 
+            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.textBox1.BackColor = System.Drawing.Color.White;
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
@@ -251,6 +264,7 @@
             // 
             // textBox2
             // 
+            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.textBox2.BackColor = System.Drawing.Color.White;
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
@@ -262,6 +276,7 @@
             // partDGV
             // 
             this.partDGV.AllowUserToAddRows = false;
+            this.partDGV.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.partDGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.partDGV.BackgroundColor = System.Drawing.Color.White;
             this.partDGV.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -294,6 +309,7 @@
             // productDGV
             // 
             this.productDGV.AllowUserToAddRows = false;
+            this.productDGV.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.productDGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.productDGV.BackgroundColor = System.Drawing.Color.White;
             this.productDGV.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -349,10 +365,9 @@
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.White;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.MinimumSize = new System.Drawing.Size(1111, 863);
+            this.MinimumSize = new System.Drawing.Size(1111, 700);
             this.Name = "mainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inventory Management";

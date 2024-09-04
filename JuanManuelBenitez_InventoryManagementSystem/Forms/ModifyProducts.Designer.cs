@@ -64,6 +64,7 @@
             // 
             // label3
             // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 20F);
@@ -77,6 +78,7 @@
             // 
             // cancelBTN
             // 
+            this.cancelBTN.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cancelBTN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(212)))));
             this.cancelBTN.FlatAppearance.BorderSize = 0;
             this.cancelBTN.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(69)))), ((int)(((byte)(120)))));
@@ -93,6 +95,7 @@
             // 
             // saveBTN
             // 
+            this.saveBTN.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.saveBTN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(212)))));
             this.saveBTN.FlatAppearance.BorderSize = 0;
             this.saveBTN.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(69)))), ((int)(((byte)(120)))));
@@ -109,6 +112,7 @@
             // 
             // deleteBTN
             // 
+            this.deleteBTN.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.deleteBTN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(212)))));
             this.deleteBTN.FlatAppearance.BorderSize = 0;
             this.deleteBTN.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(69)))), ((int)(((byte)(120)))));
@@ -125,6 +129,7 @@
             // 
             // addBTN
             // 
+            this.addBTN.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.addBTN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(212)))));
             this.addBTN.FlatAppearance.BorderSize = 0;
             this.addBTN.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(69)))), ((int)(((byte)(120)))));
@@ -141,6 +146,7 @@
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -154,6 +160,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -167,6 +174,7 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -197,6 +205,7 @@
             // partDGV
             // 
             this.partDGV.AllowUserToAddRows = false;
+            this.partDGV.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.partDGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.partDGV.BackgroundColor = System.Drawing.Color.White;
             this.partDGV.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -227,6 +236,7 @@
             // 
             // searchTXT
             // 
+            this.searchTXT.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.searchTXT.BackColor = System.Drawing.Color.White;
             this.searchTXT.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.searchTXT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
@@ -237,6 +247,7 @@
             // 
             // searchPartBTB
             // 
+            this.searchPartBTB.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.searchPartBTB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(212)))));
             this.searchPartBTB.FlatAppearance.BorderSize = 0;
             this.searchPartBTB.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(69)))), ((int)(((byte)(120)))));
@@ -253,6 +264,7 @@
             // 
             // minTXT
             // 
+            this.minTXT.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.minTXT.BackColor = System.Drawing.Color.White;
             this.minTXT.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.minTXT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
@@ -263,6 +275,7 @@
             // 
             // minLBL
             // 
+            this.minLBL.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.minLBL.AutoSize = true;
             this.minLBL.BackColor = System.Drawing.Color.Transparent;
             this.minLBL.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -276,6 +289,7 @@
             // 
             // maxTXT
             // 
+            this.maxTXT.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.maxTXT.BackColor = System.Drawing.Color.White;
             this.maxTXT.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.maxTXT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
@@ -286,6 +300,7 @@
             // 
             // maxLBL
             // 
+            this.maxLBL.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.maxLBL.AutoSize = true;
             this.maxLBL.BackColor = System.Drawing.Color.Transparent;
             this.maxLBL.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -299,6 +314,7 @@
             // 
             // priceTXT
             // 
+            this.priceTXT.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.priceTXT.BackColor = System.Drawing.Color.White;
             this.priceTXT.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.priceTXT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
@@ -309,6 +325,7 @@
             // 
             // priceLBL
             // 
+            this.priceLBL.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.priceLBL.AutoSize = true;
             this.priceLBL.BackColor = System.Drawing.Color.Transparent;
             this.priceLBL.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -322,6 +339,7 @@
             // 
             // inventoryTXT
             // 
+            this.inventoryTXT.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.inventoryTXT.BackColor = System.Drawing.Color.White;
             this.inventoryTXT.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.inventoryTXT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
@@ -332,6 +350,7 @@
             // 
             // inventoryLBL
             // 
+            this.inventoryLBL.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.inventoryLBL.AutoSize = true;
             this.inventoryLBL.BackColor = System.Drawing.Color.Transparent;
             this.inventoryLBL.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -345,6 +364,7 @@
             // 
             // nameTXT
             // 
+            this.nameTXT.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.nameTXT.BackColor = System.Drawing.Color.White;
             this.nameTXT.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.nameTXT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
@@ -355,6 +375,7 @@
             // 
             // nameLBL
             // 
+            this.nameLBL.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.nameLBL.AutoSize = true;
             this.nameLBL.BackColor = System.Drawing.Color.Transparent;
             this.nameLBL.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -368,6 +389,7 @@
             // 
             // idTXT
             // 
+            this.idTXT.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.idTXT.BackColor = System.Drawing.Color.White;
             this.idTXT.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.idTXT.Enabled = false;
@@ -379,6 +401,7 @@
             // 
             // idLBL
             // 
+            this.idLBL.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.idLBL.AutoSize = true;
             this.idLBL.BackColor = System.Drawing.Color.Transparent;
             this.idLBL.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -423,8 +446,7 @@
             this.ForeColor = System.Drawing.Color.White;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.MaximumSize = new System.Drawing.Size(1110, 798);
-            this.MinimumSize = new System.Drawing.Size(1110, 798);
+            this.MinimumSize = new System.Drawing.Size(1110, 760);
             this.Name = "ModifyProducts";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Products";
