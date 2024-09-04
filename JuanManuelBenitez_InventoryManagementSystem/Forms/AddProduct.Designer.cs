@@ -68,7 +68,7 @@
             this.minTXT.BackColor = System.Drawing.Color.White;
             this.minTXT.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.minTXT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.minTXT.Location = new System.Drawing.Point(383, 479);
+            this.minTXT.Location = new System.Drawing.Point(328, 479);
             this.minTXT.Name = "minTXT";
             this.minTXT.Size = new System.Drawing.Size(125, 25);
             this.minTXT.TabIndex = 52;
@@ -80,7 +80,7 @@
             this.minLBL.BackColor = System.Drawing.Color.Transparent;
             this.minLBL.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.minLBL.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.minLBL.Location = new System.Drawing.Point(308, 478);
+            this.minLBL.Location = new System.Drawing.Point(253, 478);
             this.minLBL.Name = "minLBL";
             this.minLBL.Size = new System.Drawing.Size(37, 21);
             this.minLBL.TabIndex = 51;
@@ -93,7 +93,7 @@
             this.maxTXT.BackColor = System.Drawing.Color.White;
             this.maxTXT.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.maxTXT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.maxTXT.Location = new System.Drawing.Point(161, 479);
+            this.maxTXT.Location = new System.Drawing.Point(106, 479);
             this.maxTXT.Name = "maxTXT";
             this.maxTXT.Size = new System.Drawing.Size(125, 25);
             this.maxTXT.TabIndex = 50;
@@ -105,7 +105,7 @@
             this.maxLBL.BackColor = System.Drawing.Color.Transparent;
             this.maxLBL.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.maxLBL.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.maxLBL.Location = new System.Drawing.Point(116, 479);
+            this.maxLBL.Location = new System.Drawing.Point(61, 479);
             this.maxLBL.Name = "maxLBL";
             this.maxLBL.Size = new System.Drawing.Size(39, 21);
             this.maxLBL.TabIndex = 49;
@@ -118,7 +118,7 @@
             this.priceTXT.BackColor = System.Drawing.Color.White;
             this.priceTXT.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.priceTXT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.priceTXT.Location = new System.Drawing.Point(161, 421);
+            this.priceTXT.Location = new System.Drawing.Point(106, 421);
             this.priceTXT.Name = "priceTXT";
             this.priceTXT.Size = new System.Drawing.Size(250, 25);
             this.priceTXT.TabIndex = 48;
@@ -130,7 +130,7 @@
             this.priceLBL.BackColor = System.Drawing.Color.Transparent;
             this.priceLBL.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.priceLBL.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.priceLBL.Location = new System.Drawing.Point(66, 421);
+            this.priceLBL.Location = new System.Drawing.Point(11, 421);
             this.priceLBL.Name = "priceLBL";
             this.priceLBL.Size = new System.Drawing.Size(89, 21);
             this.priceLBL.TabIndex = 47;
@@ -143,7 +143,7 @@
             this.inventoryTXT.BackColor = System.Drawing.Color.White;
             this.inventoryTXT.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.inventoryTXT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.inventoryTXT.Location = new System.Drawing.Point(161, 364);
+            this.inventoryTXT.Location = new System.Drawing.Point(106, 364);
             this.inventoryTXT.Name = "inventoryTXT";
             this.inventoryTXT.Size = new System.Drawing.Size(250, 25);
             this.inventoryTXT.TabIndex = 46;
@@ -155,7 +155,7 @@
             this.inventoryLBL.BackColor = System.Drawing.Color.Transparent;
             this.inventoryLBL.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.inventoryLBL.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.inventoryLBL.Location = new System.Drawing.Point(79, 364);
+            this.inventoryLBL.Location = new System.Drawing.Point(24, 364);
             this.inventoryLBL.Name = "inventoryLBL";
             this.inventoryLBL.Size = new System.Drawing.Size(76, 21);
             this.inventoryLBL.TabIndex = 45;
@@ -168,7 +168,7 @@
             this.nameTXT.BackColor = System.Drawing.Color.White;
             this.nameTXT.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.nameTXT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.nameTXT.Location = new System.Drawing.Point(161, 305);
+            this.nameTXT.Location = new System.Drawing.Point(106, 305);
             this.nameTXT.Name = "nameTXT";
             this.nameTXT.Size = new System.Drawing.Size(250, 25);
             this.nameTXT.TabIndex = 44;
@@ -181,7 +181,7 @@
             this.nameLBL.BackColor = System.Drawing.Color.Transparent;
             this.nameLBL.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nameLBL.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.nameLBL.Location = new System.Drawing.Point(103, 304);
+            this.nameLBL.Location = new System.Drawing.Point(48, 304);
             this.nameLBL.Name = "nameLBL";
             this.nameLBL.Size = new System.Drawing.Size(52, 21);
             this.nameLBL.TabIndex = 43;
@@ -195,7 +195,7 @@
             this.idTXT.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.idTXT.Enabled = false;
             this.idTXT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.idTXT.Location = new System.Drawing.Point(161, 239);
+            this.idTXT.Location = new System.Drawing.Point(106, 239);
             this.idTXT.Name = "idTXT";
             this.idTXT.Size = new System.Drawing.Size(250, 25);
             this.idTXT.TabIndex = 42;
@@ -207,7 +207,7 @@
             this.idLBL.BackColor = System.Drawing.Color.Transparent;
             this.idLBL.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.idLBL.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.idLBL.Location = new System.Drawing.Point(130, 239);
+            this.idLBL.Location = new System.Drawing.Point(75, 239);
             this.idLBL.Name = "idLBL";
             this.idLBL.Size = new System.Drawing.Size(25, 21);
             this.idLBL.TabIndex = 41;
@@ -220,7 +220,7 @@
             this.searchTXT.BackColor = System.Drawing.Color.White;
             this.searchTXT.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.searchTXT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.searchTXT.Location = new System.Drawing.Point(795, 77);
+            this.searchTXT.Location = new System.Drawing.Point(709, 11);
             this.searchTXT.Name = "searchTXT";
             this.searchTXT.Size = new System.Drawing.Size(250, 25);
             this.searchTXT.TabIndex = 54;
@@ -234,7 +234,7 @@
             this.searchPartBTB.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(90)))), ((int)(((byte)(158)))));
             this.searchPartBTB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.searchPartBTB.ForeColor = System.Drawing.Color.White;
-            this.searchPartBTB.Location = new System.Drawing.Point(714, 76);
+            this.searchPartBTB.Location = new System.Drawing.Point(628, 10);
             this.searchPartBTB.Name = "searchPartBTB";
             this.searchPartBTB.Size = new System.Drawing.Size(75, 23);
             this.searchPartBTB.TabIndex = 53;
@@ -259,7 +259,7 @@
             this.productDGV1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.productDGV1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.productDGV1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.productDGV1.Location = new System.Drawing.Point(545, 108);
+            this.productDGV1.Location = new System.Drawing.Point(459, 42);
             this.productDGV1.Name = "productDGV1";
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
@@ -292,7 +292,7 @@
             this.productDGV2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.productDGV2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.productDGV2.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.productDGV2.Location = new System.Drawing.Point(545, 406);
+            this.productDGV2.Location = new System.Drawing.Point(459, 340);
             this.productDGV2.Name = "productDGV2";
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
@@ -314,7 +314,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.label1.Location = new System.Drawing.Point(541, 76);
+            this.label1.Location = new System.Drawing.Point(455, 10);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(137, 21);
             this.label1.TabIndex = 57;
@@ -328,7 +328,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.label2.Location = new System.Drawing.Point(541, 382);
+            this.label2.Location = new System.Drawing.Point(455, 316);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(142, 21);
             this.label2.TabIndex = 58;
@@ -344,7 +344,7 @@
             this.addBTN.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(90)))), ((int)(((byte)(158)))));
             this.addBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.addBTN.ForeColor = System.Drawing.Color.White;
-            this.addBTN.Location = new System.Drawing.Point(970, 364);
+            this.addBTN.Location = new System.Drawing.Point(884, 298);
             this.addBTN.Name = "addBTN";
             this.addBTN.Size = new System.Drawing.Size(75, 23);
             this.addBTN.TabIndex = 59;
@@ -361,7 +361,7 @@
             this.deleteBTN.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(90)))), ((int)(((byte)(158)))));
             this.deleteBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.deleteBTN.ForeColor = System.Drawing.Color.White;
-            this.deleteBTN.Location = new System.Drawing.Point(970, 662);
+            this.deleteBTN.Location = new System.Drawing.Point(884, 596);
             this.deleteBTN.Name = "deleteBTN";
             this.deleteBTN.Size = new System.Drawing.Size(75, 23);
             this.deleteBTN.TabIndex = 60;
@@ -378,7 +378,7 @@
             this.saveBTN.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(90)))), ((int)(((byte)(158)))));
             this.saveBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.saveBTN.ForeColor = System.Drawing.Color.White;
-            this.saveBTN.Location = new System.Drawing.Point(889, 691);
+            this.saveBTN.Location = new System.Drawing.Point(803, 625);
             this.saveBTN.Name = "saveBTN";
             this.saveBTN.Size = new System.Drawing.Size(75, 23);
             this.saveBTN.TabIndex = 61;
@@ -395,7 +395,7 @@
             this.cancelBTN.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(90)))), ((int)(((byte)(158)))));
             this.cancelBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cancelBTN.ForeColor = System.Drawing.Color.White;
-            this.cancelBTN.Location = new System.Drawing.Point(970, 691);
+            this.cancelBTN.Location = new System.Drawing.Point(884, 625);
             this.cancelBTN.Name = "cancelBTN";
             this.cancelBTN.Size = new System.Drawing.Size(75, 23);
             this.cancelBTN.TabIndex = 62;
@@ -410,7 +410,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 20F);
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.label3.Location = new System.Drawing.Point(157, 76);
+            this.label3.Location = new System.Drawing.Point(102, 76);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(165, 37);
             this.label3.TabIndex = 63;
@@ -422,7 +422,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
-            this.ClientSize = new System.Drawing.Size(1094, 759);
+            this.ClientSize = new System.Drawing.Size(984, 661);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.cancelBTN);
             this.Controls.Add(this.saveBTN);
@@ -450,7 +450,7 @@
             this.ForeColor = System.Drawing.Color.White;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.MinimumSize = new System.Drawing.Size(1110, 760);
+            this.MinimumSize = new System.Drawing.Size(1000, 700);
             this.Name = "AddProduct";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Products";
