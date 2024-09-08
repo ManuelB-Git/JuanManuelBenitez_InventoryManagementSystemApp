@@ -286,18 +286,13 @@ namespace JuanManuelBenitez_InventoryManagementSystem
 
                 Product selectedProduct = Inventory.LookupProduct(productId);
 
-                if (selectedProduct.AssociatedParts.Count > 0)
-                {
-                    MessageBox.Show("Cannot delete a product with associated parts. Remove associated parts before deleting.");
-                }
-                else
-                {
+               
                     DialogResult result = MessageBox.Show("Are you sure you want to delete this product?", "Confirmation", MessageBoxButtons.YesNo);
                     if (result == DialogResult.Yes)
                     {
                         Inventory.DeleteProduct(selectedProduct);
                     }
-                }
+                
             }
             else
             {
