@@ -138,15 +138,37 @@ namespace JuanManuelBenitez_InventoryManagementSystem.Forms
 
         private void saveBTN_Click(object sender, EventArgs e)
         {
+
             try
             {
-                Inventory.LookupProduct(productID).Name = nameTXT.Text;
-                Inventory.LookupProduct(productID).Price = Convert.ToDecimal(priceTXT.Text);
-                Inventory.LookupProduct(productID).InStock = Convert.ToInt32(inventoryTXT.Text);
-                Inventory.LookupProduct(productID).Min = Convert.ToInt32(minTXT.Text);
-                Inventory.LookupProduct(productID).Max = Convert.ToInt32(maxTXT.Text);
+                // Get the values from the text boxes
+                string name = nameTXT.Text;
+                decimal price = Convert.ToDecimal(priceTXT.Text);
+                int inventory = Convert.ToInt32(inventoryTXT.Text);
+                int min = Convert.ToInt32(minTXT.Text);
+                int max = Convert.ToInt32(maxTXT.Text);
 
-                
+                // Check if max is larger than min
+                if (max <= min)
+                {
+                    throw new Exception("Max must be larger than Min.");
+                }
+
+                // Check if inventory is between min and max
+                if (inventory < min || inventory > max)
+                {
+                    throw new Exception("Inventory must be between Min and Max.");
+                }
+
+                // Update the product properties
+                Product product = new Product() {
+                    ProductID = productID,
+                    Name = name, 
+                    Price = price, 
+                    InStock = inventory, 
+                    Min = min, 
+                    Max =max};
+                Inventory.UpdateProduct(productID, product);
 
                 MessageBox.Show("Changes saved successfully.");
             }

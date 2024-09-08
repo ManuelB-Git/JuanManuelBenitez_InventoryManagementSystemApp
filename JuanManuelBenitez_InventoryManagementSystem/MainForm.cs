@@ -238,6 +238,7 @@ namespace JuanManuelBenitez_InventoryManagementSystem
 
         private void deletePartBTN_Click(object sender, EventArgs e)
         {
+            
             if (partDGV.SelectedRows.Count > 0)
             {
                 // Get the selected row
@@ -246,14 +247,29 @@ namespace JuanManuelBenitez_InventoryManagementSystem
                 // Get the data from the selected row (assuming the first column contains the unique identifier)
                 int partId = Convert.ToInt32(selectedRow.Cells[0].Value);
 
+
+
                 // Ask the user for confirmation before deleting
                 DialogResult result = MessageBox.Show("Are you sure you want to delete this part?", "Confirmation", MessageBoxButtons.YesNo);
+
+                foreach(Product product in Inventory.Products)
+                {
+                   
+                        if (product.LookupAssociatedPart(partId) != null)
+                        {
+                            MessageBox.Show("Cannot delete a part that is associated with a product. Remove the part from the product before deleting.");
+                            return;
+                        }
+                    
+                }
 
                 if (result == DialogResult.Yes)
                 {
                     // Delete the part
                     Inventory.DeletePart(Models.Inventory.LookupPart(partId));
                 }
+
+
             }
             else
             {
