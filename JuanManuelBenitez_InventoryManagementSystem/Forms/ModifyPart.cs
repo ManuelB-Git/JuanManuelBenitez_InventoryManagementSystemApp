@@ -38,8 +38,8 @@ namespace JuanManuelBenitez_InventoryManagementSystem.Forms
             textBox2.Text = Inventory.LookupPart(partId).Name;
             textBox4.Text = Inventory.LookupPart(partId).Price.ToString();
             textBox3.Text = Inventory.LookupPart(partId).InStock.ToString();
-            textBox5.Text = Inventory.LookupPart(partId).Min.ToString();
-            textBox6.Text = Inventory.LookupPart(partId).Max.ToString();
+            textBox6.Text = Inventory.LookupPart(partId).Min.ToString();
+            textBox5.Text = Inventory.LookupPart(partId).Max.ToString();
             if (Inventory.LookupPart(partId) is Inhouse)
             {
                 inhouseRBTN.Checked = true;
@@ -61,8 +61,8 @@ namespace JuanManuelBenitez_InventoryManagementSystem.Forms
                 string tempName = textBox2.Text;
                 decimal tempPrice = decimal.Parse(textBox4.Text);
                 int tempStock = int.Parse(textBox3.Text);
-                int tempMin = int.Parse(textBox5.Text);
-                int tempMax = int.Parse(textBox6.Text);
+                int tempMin = int.Parse(textBox6.Text);
+                int tempMax = int.Parse(textBox5.Text);
 
                 if (tempMin >= tempMax)
                 {
